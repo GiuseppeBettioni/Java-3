@@ -14,6 +14,7 @@ public class es110 {
             numeriStampati++;
             listaNumeri+=2;
         }
-        JOptionPane.showMessageDialog(null, output.toString());
+        JOptionPane.showMessageDialog(null, output);
+        output.subSequence(0,output.length()-1);
     }
 }
