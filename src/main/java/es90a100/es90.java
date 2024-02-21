@@ -8,7 +8,7 @@ public class es90 {
         int n = Integer.parseInt(JOptionPane.showInputDialog("Inserire valore n."));
         int contatore =1;
         while (contatore <= n) {
-            contatore *= 2;
+            contatore *= 02;
         }
         JOptionPane.showMessageDialog(null,"Il primo valore maggiore di n é: "+contatore);
     }
