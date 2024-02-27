@@ -24,6 +24,9 @@ public class es123 {
         risultato = primoMagg - numero;
         int primoMin = numero;
         while (true){
+            if ( risultato == 0 ){
+                break;
+            }
             contPrimo = 0;
             for (int i = 2; i < primoMin; i++) {
                 if ( primoMin % i == 0){
