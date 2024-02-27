@@ -9,9 +9,9 @@ public class es124 {
         int y;
         int z;
         String output = "I numeri x y z con la loro moltiplicazione uguale alla loro somma sono: ";
-        for (x = 1; x < 100 ; x++){
-            for (y = 1; y < 100 ; y++){
-                for (z = 1; z < 100 ; z++){
+        for (x = 0; x < 100 ; x++){
+            for (y = 0; y < 100 ; y++){
+                for (z = 0; z < 100 ; z++){
                     if ( x+y+z == x*y*z){
                         output+= x+" "+ y +" "+z+"\n";
                     }
