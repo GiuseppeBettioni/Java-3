@@ -16,6 +16,6 @@ public class es125 {
                 }
             }
         }
-        JOptionPane.showMessageDialog(null,output);
+        System.out.println(output);
     }
 }
