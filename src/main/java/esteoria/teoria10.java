@@ -22,7 +22,7 @@ public class teoria10 {
                 primoVecchio = primoNuovo;
                 primoNuovo = i;
                 if (primoNuovo-2 == primoVecchio){
-                    output +=primoVecchio+" "+primoNuovo+"\n";
+                    output +="\n"+primoVecchio+" "+primoNuovo;
                 }
             }
         }
