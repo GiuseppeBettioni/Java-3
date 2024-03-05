@@ -8,18 +8,17 @@ public class es154 {
         int lunghezzaArray = lettura("Inserire lunghezza Array");
         int[] vettore = new int[lunghezzaArray];
         int valoreConfronto = lettura("Inserire valore di confronto");
-        int contatoreMagg = 0;
+        String output ="";
         for (int i = 0; i < lunghezzaArray; i++) {
             vettore[i] = lettura("Inserire il "+(i+1)+" valore");
             if ( vettore[i]> valoreConfronto){
-                contatoreMagg++;
+                output += vettore[i]+" ";
             }
         }
-        JOptionPane.showMessageDialog(null,"Ci sono: "+contatoreMagg+" elementi maggiori del valore di confronto");
+        JOptionPane.showMessageDialog(null,"I valori maggiori del numero di confronto sono: "+output);
     }
 
     public static int lettura (String msg){
-        int n = Integer.parseInt(JOptionPane.showInputDialog(msg));
-        return n;
+        return Integer.parseInt(JOptionPane.showInputDialog(msg));
     }
 }

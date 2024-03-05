@@ -1,8 +1,8 @@
-package esteoria;
+package Funzioni_Utili;
 
 import javax.swing.*;
 
-public class teoriaFuzioneMessaggio {
+public class funzioneLetturaConMessaggio {
     public static void main(String[] args) {
         int n = lettura ("Inserisci numero");
     }
