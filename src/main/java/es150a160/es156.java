@@ -16,6 +16,9 @@ public class es156 {
             } else if ( vettore[i]==')'){
                 check--;
             }
+            if ( check < 0 ){
+                break;
+            }
         }
         if ( check == 0 ){
             JOptionPane.showMessageDialog(null,"Le parentesi sono giuste.");
