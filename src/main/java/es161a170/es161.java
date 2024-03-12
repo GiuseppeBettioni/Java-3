@@ -17,7 +17,7 @@ public class es161 {
             valore2 = temp;
         }
         for (int i = 0; i < lunghezza; i++) {
-            vettore[i] = lettura("Inseire il "+(i+1)+" elemento");
+            vettore[i] = lettura("Inseire il "+i+" elemento");
             if (vettore[i] > valore1 && vettore[i] < valore2){
                 output += i +" ";
             }

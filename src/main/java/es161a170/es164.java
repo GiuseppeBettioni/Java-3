@@ -8,21 +8,28 @@ public class es164 {
         String input = JOptionPane.showInputDialog("Inserire delle frasi separate dai dei punti.");
         int frasiTot = 0;
         int parolePerFrase = 0;
-        int numeroFrase = 0;
-        int lunghezzaMedia = 0;
+        double lunghezzaMedia = 0;
+        boolean parolaIniziata = true;
         String output ="";
-        for (int i = 0; i < input.length()-1; i++) {
-            if (input.charAt(i) == ' '){
+        for (int i = 0; i < input.length(); i++) {
+            if ( input.charAt(i) != ' ' && input.charAt(i) != ',' && input.charAt(i) != '.') {
+                parolaIniziata = true;
+            } else if (input.charAt(i) == ' ' && parolaIniziata){
                 parolePerFrase++;
+                lunghezzaMedia++;
+                parolaIniziata = false;
             } else if ( input.charAt(i) == '.'){
+                if (parolaIniziata){
+                    parolePerFrase++;
+                }
                 frasiTot++;
-                numeroFrase++;
-                lunghezzaMedia += parolePerFrase;
-                output += "La frase numero "+numeroFrase+" contiene: "+parolePerFrase+"\n";
+                output += "La frase numero "+frasiTot+" contiene: "+parolePerFrase+" parole\n";
                 parolePerFrase = 0;
+                parolaIniziata = false;
             }
+            lunghezzaMedia++;
         }
-        lunghezzaMedia /= numeroFrase;
-
+        lunghezzaMedia /= (frasiTot+1);
+        JOptionPane.showMessageDialog(null, "Ci sono : "+frasiTot+" frasi.\n"+output+" la lunghezza media vale: "+lunghezzaMedia);
     }
 }

@@ -7,13 +7,13 @@ public class es160 {
         //Dato un vettore di caratteri dire quante volte compaiono due caratteri uguali consecutivamente
         int lunghezza = Integer.parseInt(lettura("Inserire lunghezza array"));
         char[] array = new char[lunghezza];
-        char precedente = ' ';
+        char precedente = '~';
         int contatore = 0;
         for (int i = 0; i < lunghezza; i++) {
-            array [i] = lettura("Inserire il: "+(i+1)+" elemento.").charAt(0);
+            array [i] = lettura("Inserire il: "+i+" elemento.").charAt(0);
             if ( precedente == array[i]){
                 contatore++;
-                precedente = ' ';
+                precedente = '~';
             } else {
                 precedente = array [i];
             }
@@ -21,8 +21,7 @@ public class es160 {
         JOptionPane.showMessageDialog(null,"Due caratteri uguali appaiono consecutivamente : "+contatore+" volte");
     }
     public static String lettura (String msg){
-        String input = JOptionPane.showInputDialog(msg);
-        return input;
+        return JOptionPane.showInputDialog(msg);
     }
 
 }
