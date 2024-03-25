@@ -3,7 +3,7 @@ package es161a170;
 import javax.swing.*;
 
 public class es169 {
-    public static void main(String[] args) {//Devi fare il 164
+    public static void main(String[] args) {
         //Generare tutti e soli i numeri inferiori a N che sono un palindromo
         int n = lettura("Inserire N");
         String cifre = String.valueOf(n);
@@ -21,7 +21,7 @@ public class es169 {
                 vettore[j] = listaNumeri % 10;
                 listaNumeri /= 10;
             }
-            for (int j = 0; j < lunghezzaI; j++) {
+            for (int j = 0; j < lunghezzaI/2; j++) {
                 if ( vettore[j] != vettore[lunghezzaI-1-j]){
                     isPalindromo = false;
                 }
