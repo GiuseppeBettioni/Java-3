@@ -27,7 +27,7 @@ public class es173 {
                     for (int j = i; j < lunghezza - 1 - elementiEliminati; j++) {
                         vettore[j] = vettore[j + 1];
                         if (j + 1 > lunghezza - 1 - elementiEliminati) {
-                            vettore[j + 1] = Integer.MIN_VALUE;
+                            vettore[j + 1] = 0;
                         }
                     }
                     elementiEliminati++;
@@ -41,7 +41,6 @@ public class es173 {
         }
         JOptionPane.showMessageDialog(null,"Il vettore originale è: "+input+"\nLa versione compattata è: "+output
                 +"\nL'indice dell'ultimo elemento è: "+(lunghezza-elementiEliminati-1));
-
     }
 
     public static int lettura(String msg) {
