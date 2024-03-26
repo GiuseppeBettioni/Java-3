@@ -8,8 +8,10 @@ public class es181 {
         String input = lettura("Inserire testo").toLowerCase();
         int[] vettoreVocali = new int[5];
         String output ="";
+        char carattere = '1';
         for (int i = 0; i < input.length(); i++) {
-            switch (input.charAt(i)){
+            carattere = input.charAt(i);
+            switch (Character.toLowerCase(carattere)){
                 case 'a':
                     vettoreVocali [0]++;
                     break;
@@ -33,19 +35,19 @@ public class es181 {
             output += "Ci sono: "+vettoreVocali[i];
             switch (i){
                 case 0:
-                    output+= "a \n";
+                    output+= " a \n";
                     break;
                 case 1:
-                    output+= "e \n";
+                    output+= " e \n";
                     break;
                 case 2:
-                    output+= "i \n";
+                    output+= " i \n";
                     break;
                 case 3:
-                    output+= "o \n";
+                    output+= " o \n";
                     break;
                 case 4:
-                    output+= "u \n";
+                    output+= " u \n";
                     break;
                 default:
                     break;

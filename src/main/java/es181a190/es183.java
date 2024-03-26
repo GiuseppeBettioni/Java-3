@@ -19,6 +19,9 @@ public class es183 {
                 temp+= input.charAt(i);
             }
         }
+        if ( temp.equals(parola)){
+            contatore++;
+        }
         JOptionPane.showMessageDialog(null, contatore);
     }
 }
