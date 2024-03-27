@@ -1,7 +1,6 @@
 package esteoria;
 
 import javax.swing.*;
-import java.util.jar.JarOutputStream;
 
 public class teoria14 {
     public static void main(String[] args) {
